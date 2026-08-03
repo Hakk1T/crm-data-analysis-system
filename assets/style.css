@@ -1,0 +1,230 @@
+/* --- 1. YENİ NESİL MESH GRADIENT (HAREKETLİ IŞIK HUZMELERİ) --- */
+@keyframes moveOrbs {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+body {
+    /* Arka planı tok bir metalik gri-mavi yaptık. Beyaz cam paneller artık fırlayacak! */
+    background-color: #b8c4d4 !important;
+    background-image: 
+        radial-gradient(at 80% 0%, rgba(255, 255, 255, 0.7) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, rgba(233, 27, 33, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(24, 93, 245, 0.1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, rgba(255, 255, 255, 0.4) 0px, transparent 50%) !important;
+    background-size: 200% 200% !important;
+    animation: moveOrbs 20s ease-in-out infinite !important;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    color: #252728; 
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh;
+}
+
+.login-wrapper-bg { 
+    /* Karanlık giriş ekranında kırmızı ve derin siyahların yavaşça süzülen ışıkları */
+    background-color: #0a0b0d !important;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(233, 27, 33, 0.25) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(37, 39, 40, 0.9) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(233, 27, 33, 0.1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(24, 93, 245, 0.08) 0px, transparent 50%) !important;
+    background-size: 200% 200% !important;
+    animation: moveOrbs 18s ease-in-out infinite !important;
+}
+
+/* --- 2. GLASSMORPHISM (CAM EFEKTİ) KARTLARI --- */
+.glass-panel { 
+    background: rgba(255, 255, 255, 0.65); 
+    backdrop-filter: blur(16px); 
+    -webkit-backdrop-filter: blur(16px); 
+    border-radius: 12px; 
+    border: 1px solid rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); 
+    padding: 30px;
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- 3. MENÜ (SIDEBAR) STİLLERİ --- */
+.glass-sidebar { 
+    background: rgba(37, 39, 40, 0.85) !important; 
+    backdrop-filter: blur(20px) !important; 
+    -webkit-backdrop-filter: blur(20px) !important; 
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.glass-nav .nav-link.active { 
+    background-color: #E91B21 !important; 
+    color: white !important; 
+    font-weight: 600; 
+    box-shadow: 0 4px 8px rgba(233,27,33,0.3);
+}
+
+.glass-nav .nav-link { 
+    color: rgba(255,255,255,0.7) !important; 
+    border-radius: 8px; 
+    font-weight: 500; 
+    transition: all 0.2s ease; 
+}
+
+.glass-nav .nav-link:hover { 
+    background-color: rgba(255,255,255,0.1) !important; 
+    color: white !important; 
+}
+
+/* --- 4. BUTONLAR --- */
+.glass-btn { 
+    background: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255,255,255,0.9); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04); 
+    transition: all 0.2s;
+}
+
+.glass-btn:hover { 
+    background: rgba(255, 255, 255, 0.95); 
+    transform: scale(1.05); 
+}
+
+.glass-btn-red { 
+    background: #E91B21 !important; 
+    color: white !important; 
+    border: none; 
+    box-shadow: 0 4px 10px rgba(233,27,33,0.3); 
+    animation: pulseGlow 2s infinite;
+}
+
+.glass-btn-red:hover { 
+    background: #c7161b !important; 
+}
+
+/* --- 5. MODAL VE TABLO İNCE AYARLARI --- */
+.glass-modal { 
+    background: rgba(255, 255, 255, 0.95) !important; 
+    backdrop-filter: blur(25px) !important; 
+    border: 1px solid rgba(255,255,255,1) !important; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.dash-tooltip, .dash-tooltip .dash-table-tooltip {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+}
+
+.dash-table-tooltip p { margin-bottom: 5px !important; margin-top: 0 !important; }
+.dash-spreadsheet td div { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+.dash-spreadsheet .dash-cell-value { padding: 10px !important; }
+
+/* Scrollbar Tasarımı */
+#dynamic-nav-links::-webkit-scrollbar { width: 5px; }
+#dynamic-nav-links::-webkit-scrollbar-track { background: transparent; }
+#dynamic-nav-links::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; }
+#dynamic-nav-links::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.35); }
+
+/* Kilit Hata Mesajı Stili */
+#login-error div {
+    background: rgba(233, 27, 33, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(233, 27, 33, 0.5) !important;
+    padding: 10px 20px !important;
+    border-radius: 12px !important;
+    color: #E91B21 !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+}
+
+/* İnput (Arama/Form) Odaklanma Parlaması */
+input:focus, textarea:focus, .Select-control.is-focused {
+    outline: none !important;
+    border-color: rgba(233, 27, 33, 0.8) !important;
+    box-shadow: 0 0 15px rgba(233, 27, 33, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Tablo üzerine gelince satır aydınlatması */
+.dash-spreadsheet tbody tr:hover td {
+    background-color: rgba(233, 27, 33, 0.08) !important;
+    color: #E91B21 !important;
+    font-weight: 600 !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Sayfa geneli modern ince Scrollbar */
+::-webkit-scrollbar { 
+    width: 8px; 
+    height: 8px; 
+}
+::-webkit-scrollbar-track { 
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb { 
+    background: rgba(37, 39, 40, 0.3); 
+    border-radius: 10px; 
+    transition: all 0.3s;
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: rgba(233, 27, 33, 0.6); 
+}
+
+/* Harita ve Grafik Tooltiplerini Cam Yapma */
+.dash-tooltip, .dash-tooltip .dash-table-tooltip, .hoverlayer .tooltip {
+    background: rgba(20, 20, 20, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+    font-size: 13px !important;
+    padding: 10px !important;
+}
+
+/* --- KPI KARTLARI (KUTUCUKLAR) --- */
+.glass-metric { 
+    background: rgba(255, 255, 255, 0.65) !important; 
+    backdrop-filter: blur(12px) !important; 
+    padding: 20px !important; 
+    border-radius: 10px !important; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important; 
+    display: flex !important; 
+    justify-content: space-between !important; 
+    align-items: center !important; 
+    
+    /* Renkli sol çizgiyi ezmemesi için beyaz cam sınırını 3 yöne böldük */
+    border-top: 1px solid rgba(255,255,255,0.9) !important;
+    border-right: 1px solid rgba(255,255,255,0.9) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.9) !important;
+    
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards !important; 
+    
+    /* Etkileşim ve Büyüme Efekti Ayarları */
+    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease !important;
+    cursor: pointer !important; 
+}
+
+/* Üzerine gelindiğinde (Hover) çalışacak büyüme ve parlama efekti */
+.glass-metric:hover {
+    transform: translateY(-5px) scale(1.02) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+}
+
+.glass-metric span { 
+    font-weight: 600 !important; 
+    color: #444 !important; 
+    font-size: 15px !important;
+}
+
+.glass-metric h3 {
+    margin: 0 !important;
+    font-weight: bold !important;
+    color: #1A1A1A !important;
+}

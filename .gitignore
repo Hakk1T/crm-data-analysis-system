@@ -1,0 +1,4 @@
+.env
+# Lokal Veritabanı
+*.db
+lokal_veritabani.db
