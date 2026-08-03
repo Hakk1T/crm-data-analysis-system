@@ -15,13 +15,16 @@ A professional Customer Relationship Management (CRM) and data analysis system d
 *(Ensure your images are uploaded to the `images/` folder)*
 
 **1. Admin Panel & Analysis Dashboard**
-![Admin Panel](images/yonetici_paneli.png)
+<img width="1920" height="1440" alt="1" src="https://github.com/user-attachments/assets/b6c9c2ec-fb83-4278-a776-007c02225a46" />
+
 
 **2. Transaction History & Customer Table**
-![Transaction History](images/islem_gecmisi.png)
+<img width="1920" height="1440" alt="3" src="https://github.com/user-attachments/assets/234c2194-96ae-4490-aca0-b7c5c1ba7e17" />
+
 
 **3. Customer Location & Charging Network Map**
-![Map View](images/harita_gorunumu.png)
+<img width="1920" height="1440" alt="6" src="https://github.com/user-attachments/assets/6eaf3c46-eea1-4ba6-8f1c-ee5a6e50f6f2" />
+
 
 ### 🚀 Key Features
 
@@ -43,7 +46,7 @@ A professional Customer Relationship Management (CRM) and data analysis system d
 
 **1. Clone the Repository:**
 ```bash
-git clone [https://github.com/USERNAME/repository-name.git](https://github.com/USERNAME/repository-name.git)
+git clone https://github.com/USERNAME/repository-name.git
 cd repository-name
 2. Install Dependencies:
 
@@ -99,7 +102,7 @@ Harita: Leaflet, Plotly Maps, Overpass API
 1. Repoyu Klonlayın:
 
 Bash
-git clone [https://github.com/KULLANICI_ADINIZ/proje-adi.git](https://github.com/KULLANICI_ADINIZ/proje-adi.git)
+git clone https://github.com/KULLANICI_ADINIZ/proje-adi.git
 cd proje-adi
 2. Kütüphaneleri Kurun:
 
