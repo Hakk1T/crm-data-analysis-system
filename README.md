@@ -12,8 +12,6 @@ A professional Customer Relationship Management (CRM) and data analysis system d
 
 ### 📸 Project Screenshots
 
-*(Ensure your images are uploaded to the `images/` folder)*
-
 **1. Admin Panel & Analysis Dashboard**
 <img width="1920" height="1440" alt="1" src="https://github.com/user-attachments/assets/bc0ce296-df6e-45a5-a2be-3194fd17419c" />
 
@@ -66,8 +64,6 @@ A professional Customer Relationship Management (CRM) and data analysis system d
 Otomotiv satış ekipleri için geliştirilmiş, veriye dayalı karar almayı sağlayan profesyonel bir Müşteri İlişkileri Yönetimi (CRM) ve Analiz sistemidir. Veritabanı bağlantısı koptuğunda dahi çevrimdışı yedeklerinden kendini otomatik inşa edebilen "Otonom Kurtarma Motoru" ile donatılmıştır.
 
 ### 📸 Projeden Görüntüler
-
-*(Görsellerin `images/` klasörüne yüklendiğinden emin olun)*
 
 **1. Yönetici Paneli ve Analiz Kokpiti**
 <img width="1920" height="1440" alt="1" src="https://github.com/user-attachments/assets/17f6ffdc-32e6-46f0-8247-1090318dd4f6" />
