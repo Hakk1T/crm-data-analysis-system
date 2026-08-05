@@ -1,4 +1,4 @@
-# 🚗 CRM & Data Analysis Dashboard | CRM ve Veri Analiz Kokpiti
+# CRM & Data Analysis Dashboard | CRM Veri Analiz Sistem
 
 🌍 *Choose Language / Dil Seçimi:*
 * [🇬🇧 English](#-english-version)
